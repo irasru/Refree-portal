@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .search-bar input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+header .user-icon {
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.post-job, .view-jobs, .visual-representation {
+    margin-bottom: 20px;
+}
+
+.post-job form, .filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-job form input, .filters input {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.post-job form button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-listings .job-card {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+}
+
+#graphContainer {
+    width: 100%;
+    height: 500px;
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}

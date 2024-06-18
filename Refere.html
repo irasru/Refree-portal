@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Referral Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">JobPortal</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Post a Job</a></li>
+                <li><a href="#">View Jobs</a></li>
+                <li><a href="#">My Referrals</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for jobs...">
+        </div>
+        <div class="user-icon">Profile</div>
+    </header>
+    
+    <main>
+        <section class="post-job">
+            <h2>Post a Job</h2>
+            <form id="postJobForm">
+                <input type="text" id="jobTitle" placeholder="Job Title" required>
+                <input type="text" id="role" placeholder="Role" required>
+                <input type="text" id="experience" placeholder="Experience" required>
+                <input type="text" id="company" placeholder="Company" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <input type="url" id="link" placeholder="Link" required>
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+
+        <section class="view-jobs">
+            <h2>View Existing Open Positions</h2>
+            <div class="filters">
+                <input type="text" id="filterTitle" placeholder="Job Title">
+                <input type="text" id="filterRole" placeholder="Role">
+                <input type="text" id="filterExperience" placeholder="Experience">
+                <input type="text" id="filterCompany" placeholder="Company">
+                <input type="text" id="filterLocation" placeholder="Location">
+            </div>
+            <div class="job-listings">
+                <!-- Job listings will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="visual-representation">
+            <h2>Job Distribution</h2>
+            <div id="graphContainer">
+                <!-- 3D Graph will be rendered here -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 JobPortal. All rights reserved.</p>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
